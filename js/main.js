@@ -7,4 +7,3 @@ window.onscroll = function () {
     nav.classList.remove("header-scrolled");
   }
 };
-
