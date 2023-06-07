@@ -11,9 +11,10 @@ window.onscroll = function () {
 function sendMail() {
   var name = document.getElementById("input_name").value;
   var email = document.getElementById("input_email").value;
+  var emailDest = "kikilukmanhakim92@gmail.com";
   var subject = document.getElementById("input_subject").value;
   var message = document.getElementById("input_message").value;
-  var link = "mailto:" + email + "?subject=" + escape(subject) + "&body=" + escape(message +" regards: " + name);
+  var link = "mailto:" + emailDest + "?subject=" + escape(subject) + "&body=" + escape(message +" regards: " + name + ", Mail Me at: " + email);
   window.open(link);
 }
 
